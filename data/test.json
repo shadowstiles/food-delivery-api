@@ -1,0 +1,602 @@
+[
+  {
+    "review": "The pizza was fresh and tasty, delivery was fast.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff9",
+    "user": "68a90bfaaa56ddb6bb36b7a0"
+  },
+  {
+    "review": "Rider was polite and delivered on time.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb4",
+    "user": "68a90bfaaa56ddb6bb36b7a2"
+  },
+  {
+    "review": "The restaurant food quality is average, but customer service was nice.",
+    "rating": 3,
+    "restaurant": "68a90fc24481078610857f5b",
+    "user": "68a90bfaaa56ddb6bb36b7a4"
+  },
+  {
+    "review": "Loved the burger, juicy and perfectly cooked.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff0",
+    "user": "68a90bfaaa56ddb6bb36b7a6"
+  },
+  {
+    "review": "The rider delayed my food for 30 minutes.",
+    "rating": 2,
+    "rider": "68a91087157b51fc2e36ceb5",
+    "user": "68a90bfaaa56ddb6bb36b7a8"
+  },
+  {
+    "review": "Restaurant ambiance is good, packaging was neat.",
+    "rating": 4,
+    "restaurant": "68a90fc24481078610857f53",
+    "user": "68a90bfaaa56ddb6bb36b7aa"
+  },
+  {
+    "review": "Shawarma tasted authentic and filling.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff1",
+    "user": "68a90bfaaa56ddb6bb36b7ac"
+  },
+  {
+    "review": "Rider was rude on call when I asked about location.",
+    "rating": 1,
+    "rider": "68a91087157b51fc2e36ceb8",
+    "user": "68a90bfaaa56ddb6bb36b7ae"
+  },
+  {
+    "review": "The restaurant had delicious jollof rice with spicy chicken.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f56",
+    "user": "68a90bfaaa56ddb6bb36b7b0"
+  },
+  {
+    "review": "The fries were soggy by the time they arrived.",
+    "rating": 2,
+    "product": "68a9182f6f1c126a63d58ff3",
+    "user": "68a90bfaaa56ddb6bb36b7b2"
+  },
+  {
+    "review": "Rider arrived early and confirmed order politely.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb6",
+    "user": "68a90bfaaa56ddb6bb36b7a0"
+  },
+  {
+    "review": "Restaurant food portions were smaller than expected.",
+    "rating": 3,
+    "restaurant": "68a90fc24481078610857f5c",
+    "user": "68a90bfaaa56ddb6bb36b7a2"
+  },
+  {
+    "review": "The salad was fresh and nicely packed.",
+    "rating": 4,
+    "product": "68a9182f6f1c126a63d58ff2",
+    "user": "68a90bfaaa56ddb6bb36b7a4"
+  },
+  {
+    "review": "Rider handled the delivery well even with rain.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb7",
+    "user": "68a90bfaaa56ddb6bb36b7a6"
+  },
+  {
+    "review": "The restaurant needs improvement in customer care.",
+    "rating": 2,
+    "restaurant": "68a90fc24481078610857f54",
+    "user": "68a90bfaaa56ddb6bb36b7a8"
+  },
+  {
+    "review": "Smoothie was refreshing and well blended.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff4",
+    "user": "68a90bfaaa56ddb6bb36b7aa"
+  },
+  {
+    "review": "Rider couldn’t find the address quickly.",
+    "rating": 3,
+    "rider": "68a91087157b51fc2e36ceb8",
+    "user": "68a90bfaaa56ddb6bb36b7ac"
+  },
+  {
+    "review": "Restaurant had very fast preparation time.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f55",
+    "user": "68a90bfaaa56ddb6bb36b7ae"
+  },
+  {
+    "review": "The suya was spicy and flavorful.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff5",
+    "user": "68a90bfaaa56ddb6bb36b7b0"
+  },
+  {
+    "review": "Rider mixed up my order with someone else’s.",
+    "rating": 2,
+    "rider": "68a91087157b51fc2e36ceb4",
+    "user": "68a90bfaaa56ddb6bb36b7b2"
+  },
+  {
+    "review": "Restaurant packaging leaked oil into the bag.",
+    "rating": 2,
+    "restaurant": "68a90fc24481078610857f5a",
+    "user": "68a90bfaaa56ddb6bb36b7a0"
+  },
+  {
+    "review": "Chicken wings were crispy and delicious.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff6",
+    "user": "68a90bfaaa56ddb6bb36b7a2"
+  },
+  {
+    "review": "Rider was respectful and greeted well.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb5",
+    "user": "68a90bfaaa56ddb6bb36b7a4"
+  },
+  {
+    "review": "Restaurant had excellent egusi soup with pounded yam.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f57",
+    "user": "68a90bfaaa56ddb6bb36b7a6"
+  },
+  {
+    "review": "Sandwich was okay but bread wasn’t very fresh.",
+    "rating": 3,
+    "product": "68a9182f6f1c126a63d58ff0",
+    "user": "68a90bfaaa56ddb6bb36b7a8"
+  },
+  {
+    "review": "Rider was careless and dropped my drink.",
+    "rating": 1,
+    "rider": "68a91087157b51fc2e36ceb6",
+    "user": "68a90bfaaa56ddb6bb36b7aa"
+  },
+  {
+    "review": "Restaurant service was very welcoming and professional.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f58",
+    "user": "68a90bfaaa56ddb6bb36b7ac"
+  },
+  {
+    "review": "Ice cream was melted by the time it arrived.",
+    "rating": 2,
+    "product": "68a9182f6f1c126a63d58ff1",
+    "user": "68a90bfaaa56ddb6bb36b7ae"
+  },
+  {
+    "review": "Rider communicated well during delivery.",
+    "rating": 4,
+    "rider": "68a91087157b51fc2e36ceb7",
+    "user": "68a90bfaaa56ddb6bb36b7b0"
+  },
+  {
+    "review": "Restaurant meals were overpriced for the portion size.",
+    "rating": 2,
+    "restaurant": "68a90fc24481078610857f59",
+    "user": "68a90bfaaa56ddb6bb36b7b2"
+  },
+  {
+    "review": "The grilled fish was delicious and spicy.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff2",
+    "user": "68a90bfaaa56ddb6bb36b7a0"
+  },
+  {
+    "review": "Rider was friendly and cracked jokes, very cheerful.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb8",
+    "user": "68a90bfaaa56ddb6bb36b7a2"
+  },
+  {
+    "review": "Restaurant food was delivered hot and fresh.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f5a",
+    "user": "68a90bfaaa56ddb6bb36b7a4"
+  },
+  {
+    "review": "The pizza crust was too hard to chew.",
+    "rating": 2,
+    "product": "68a9182f6f1c126a63d58ff3",
+    "user": "68a90bfaaa56ddb6bb36b7a6"
+  },
+  {
+    "review": "Rider came late but apologized sincerely.",
+    "rating": 3,
+    "rider": "68a91087157b51fc2e36ceb4",
+    "user": "68a90bfaaa56ddb6bb36b7a8"
+  },
+  {
+    "review": "Restaurant gave complimentary water, very thoughtful.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f5b",
+    "user": "68a90bfaaa56ddb6bb36b7aa"
+  },
+  {
+    "review": "The pancake was fluffy but lacked syrup.",
+    "rating": 3,
+    "product": "68a9182f6f1c126a63d58ff4",
+    "user": "68a90bfaaa56ddb6bb36b7ac"
+  },
+  {
+    "review": "Rider was impatient at the gate and shouted.",
+    "rating": 1,
+    "rider": "68a91087157b51fc2e36ceb5",
+    "user": "68a90bfaaa56ddb6bb36b7ae"
+  },
+  {
+    "review": "Restaurant prepared amala and ewedu perfectly, very tasty.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f56",
+    "user": "68a90bfaaa56ddb6bb36b7b0"
+  },
+  {
+    "review": "Burger was cold and dry.",
+    "rating": 2,
+    "product": "68a9182f6f1c126a63d58ff5",
+    "user": "68a90bfaaa56ddb6bb36b7b2"
+  },
+  {
+    "review": "Rider followed directions perfectly and was quick.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb6",
+    "user": "68a90bfaaa56ddb6bb36b7a0"
+  },
+  {
+    "review": "Restaurant didn’t include cutlery in the order.",
+    "rating": 3,
+    "restaurant": "68a90fc24481078610857f57",
+    "user": "68a90bfaaa56ddb6bb36b7a2"
+  },
+  {
+    "review": "The milkshake was creamy and thick, loved it.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff6",
+    "user": "68a90bfaaa56ddb6bb36b7a4"
+  },
+  {
+    "review": "Rider was polite but came without change.",
+    "rating": 3,
+    "rider": "68a91087157b51fc2e36ceb7",
+    "user": "68a90bfaaa56ddb6bb36b7a6"
+  },
+  {
+    "review": "Restaurant food was too salty this time.",
+    "rating": 2,
+    "restaurant": "68a90fc24481078610857f58",
+    "user": "68a90bfaaa56ddb6bb36b7a8"
+  },
+  {
+    "review": "Samosa was crunchy and flavorful.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff0",
+    "user": "68a90bfaaa56ddb6bb36b7aa"
+  },
+  {
+    "review": "Rider was very fast, arrived earlier than expected.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb8",
+    "user": "68a90bfaaa56ddb6bb36b7ac"
+  },
+  {
+    "review": "Restaurant soup was watery, not impressed.",
+    "rating": 2,
+    "restaurant": "68a90fc24481078610857f59",
+    "user": "68a90bfaaa56ddb6bb36b7ae"
+  },
+  {
+    "review": "The cake slice was moist and sweet.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff1",
+    "user": "68a90bfaaa56ddb6bb36b7b0"
+  },
+  {
+    "review": "Rider mixed up drinks but corrected quickly.",
+    "rating": 4,
+    "rider": "68a91087157b51fc2e36ceb4",
+    "user": "68a90bfaaa56ddb6bb36b7b2"
+  },
+  {
+    "review": "Restaurant jollof rice had the perfect smoky flavor.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f5c",
+    "user": "68a90bfaaa56ddb6bb36b7a0"
+  },
+  {
+    "review": "The shawarma wrap fell apart easily.",
+    "rating": 2,
+    "product": "68a9182f6f1c126a63d58ff2",
+    "user": "68a90bfaaa56ddb6bb36b7a2"
+  },
+  {
+    "review": "Rider was respectful and greeted warmly.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb5",
+    "user": "68a90bfaaa56ddb6bb36b7a4"
+  },
+  {
+    "review": "Restaurant’s egusi soup was too oily.",
+    "rating": 2,
+    "restaurant": "68a90fc24481078610857f53",
+    "user": "68a90bfaaa56ddb6bb36b7a6"
+  },
+  {
+    "review": "The smoothie was refreshing and natural.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff3",
+    "user": "68a90bfaaa56ddb6bb36b7a8"
+  },
+  {
+    "review": "Rider delayed because he couldn’t find my house.",
+    "rating": 3,
+    "rider": "68a91087157b51fc2e36ceb6",
+    "user": "68a90bfaaa56ddb6bb36b7aa"
+  },
+  {
+    "review": "Restaurant gave extra pepper sauce, really nice.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f54",
+    "user": "68a90bfaaa56ddb6bb36b7ac"
+  },
+  {
+    "review": "The fried rice had too many peas.",
+    "rating": 3,
+    "product": "68a9182f6f1c126a63d58ff4",
+    "user": "68a90bfaaa56ddb6bb36b7ae"
+  },
+  {
+    "review": "Rider was rude and didn’t greet.",
+    "rating": 1,
+    "rider": "68a91087157b51fc2e36ceb7",
+    "user": "68a90bfaaa56ddb6bb36b7b0"
+  },
+  {
+    "review": "Restaurant forgot to add plantain to my order.",
+    "rating": 2,
+    "restaurant": "68a90fc24481078610857f55",
+    "user": "68a90bfaaa56ddb6bb36b7b2"
+  },
+  {
+    "review": "The cupcake was too sweet for my taste.",
+    "rating": 2,
+    "product": "68a9182f6f1c126a63d58ff5",
+    "user": "68a90bfaaa56ddb6bb36b7a0"
+  },
+  {
+    "review": "Rider carried the food carefully, nothing spilled.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb8",
+    "user": "68a90bfaaa56ddb6bb36b7a2"
+  },
+  {
+    "review": "Restaurant’s suya was well spiced and tender.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f56",
+    "user": "68a90bfaaa56ddb6bb36b7a4"
+  },
+  {
+    "review": "The sandwich bread was stale.",
+    "rating": 1,
+    "product": "68a9182f6f1c126a63d58ff6",
+    "user": "68a90bfaaa56ddb6bb36b7a6"
+  },
+  {
+    "review": "Rider was too slow, food got cold.",
+    "rating": 2,
+    "rider": "68a91087157b51fc2e36ceb4",
+    "user": "68a90bfaaa56ddb6bb36b7a8"
+  },
+  {
+    "review": "Restaurant added free puff-puff, I’m impressed.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f57",
+    "user": "68a90bfaaa56ddb6bb36b7aa"
+  },
+  {
+    "review": "The doughnut was fluffy and fresh.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff0",
+    "user": "68a90bfaaa56ddb6bb36b7ac"
+  },
+  {
+    "review": "Rider was confused with directions, wasted time.",
+    "rating": 2,
+    "rider": "68a91087157b51fc2e36ceb5",
+    "user": "68a90bfaaa56ddb6bb36b7ae"
+  },
+  {
+    "review": "Restaurant’s beans porridge tasted homemade.",
+    "rating": 4,
+    "restaurant": "68a90fc24481078610857f58",
+    "user": "68a90bfaaa56ddb6bb36b7b0"
+  },
+  {
+    "review": "The grilled chicken was juicy and smoky.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff1",
+    "user": "68a90bfaaa56ddb6bb36b7b2"
+  },
+  {
+    "review": "Rider was too harsh when asking for payment.",
+    "rating": 1,
+    "rider": "68a91087157b51fc2e36ceb6",
+    "user": "68a90bfaaa56ddb6bb36b7a0"
+  },
+  {
+    "review": "Restaurant’s fried plantain was perfectly golden.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f59",
+    "user": "68a90bfaaa56ddb6bb36b7a2"
+  },
+  {
+    "review": "The meat pie filling was scanty.",
+    "rating": 2,
+    "product": "68a9182f6f1c126a63d58ff2",
+    "user": "68a90bfaaa56ddb6bb36b7a4"
+  },
+  {
+    "review": "Rider was cheerful, made me smile.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb7",
+    "user": "68a90bfaaa56ddb6bb36b7a6"
+  },
+  {
+    "review": "Restaurant’s okra soup was too thick.",
+    "rating": 3,
+    "restaurant": "68a90fc24481078610857f5c",
+    "user": "68a90bfaaa56ddb6bb36b7a8"
+  },
+  {
+    "review": "The amala was served hot and delicious.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f53",
+    "user": "68a90bfaaa56ddb6bb36b7aa"
+  },
+  {
+    "review": "The pizza crust was burnt and hard.",
+    "rating": 1,
+    "product": "68a9182f6f1c126a63d58ff3",
+    "user": "68a90bfaaa56ddb6bb36b7ac"
+  },
+  {
+    "review": "Rider was polite but came later than expected.",
+    "rating": 3,
+    "rider": "68a91087157b51fc2e36ceb8",
+    "user": "68a90bfaaa56ddb6bb36b7ae"
+  },
+  {
+    "review": "Restaurant’s moin-moin was well prepared.",
+    "rating": 4,
+    "restaurant": "68a90fc24481078610857f54",
+    "user": "68a90bfaaa56ddb6bb36b7b0"
+  },
+  {
+    "review": "The ice cream was melted when delivered.",
+    "rating": 2,
+    "product": "68a9182f6f1c126a63d58ff4",
+    "user": "68a90bfaaa56ddb6bb36b7b2"
+  },
+  {
+    "review": "Rider was patient while I confirmed my change.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb4",
+    "user": "68a90bfaaa56ddb6bb36b7a0"
+  },
+  {
+    "review": "Restaurant’s pepper soup had the right spice balance.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f55",
+    "user": "68a90bfaaa56ddb6bb36b7a2"
+  },
+  {
+    "review": "The salad was soggy, not fresh.",
+    "rating": 2,
+    "product": "68a9182f6f1c126a63d58ff5",
+    "user": "68a90bfaaa56ddb6bb36b7a4"
+  },
+  {
+    "review": "Rider forgot part of my order at the restaurant.",
+    "rating": 1,
+    "rider": "68a91087157b51fc2e36ceb5",
+    "user": "68a90bfaaa56ddb6bb36b7a6"
+  },
+  {
+    "review": "Restaurant’s nkwobi was rich and tasty.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f56",
+    "user": "68a90bfaaa56ddb6bb36b7a8"
+  },
+  {
+    "review": "The burger had too much mayonnaise.",
+    "rating": 3,
+    "product": "68a9182f6f1c126a63d58ff6",
+    "user": "68a90bfaaa56ddb6bb36b7aa"
+  },
+  {
+    "review": "Rider handled the delivery carefully, nothing spilled.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb6",
+    "user": "68a90bfaaa56ddb6bb36b7ac"
+  },
+  {
+    "review": "Restaurant’s jollof was over-salted this time.",
+    "rating": 2,
+    "restaurant": "68a90fc24481078610857f57",
+    "user": "68a90bfaaa56ddb6bb36b7ae"
+  },
+  {
+    "review": "The spring rolls were crunchy and tasty.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff0",
+    "user": "68a90bfaaa56ddb6bb36b7b0"
+  },
+  {
+    "review": "Rider was sweating and food packaging was stained.",
+    "rating": 2,
+    "rider": "68a91087157b51fc2e36ceb7",
+    "user": "68a90bfaaa56ddb6bb36b7b2"
+  },
+  {
+    "review": "Restaurant’s grilled fish was flavorful.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f58",
+    "user": "68a90bfaaa56ddb6bb36b7a0"
+  },
+  {
+    "review": "The spaghetti portion was too small.",
+    "rating": 2,
+    "product": "68a9182f6f1c126a63d58ff1",
+    "user": "68a90bfaaa56ddb6bb36b7a2"
+  },
+  {
+    "review": "Rider smiled and wished me a good day.",
+    "rating": 5,
+    "rider": "68a91087157b51fc2e36ceb8",
+    "user": "68a90bfaaa56ddb6bb36b7a4"
+  },
+  {
+    "review": "Restaurant’s beans cake (akara) was too oily.",
+    "rating": 2,
+    "restaurant": "68a90fc24481078610857f59",
+    "user": "68a90bfaaa56ddb6bb36b7a6"
+  },
+  {
+    "review": "The milkshake was creamy and satisfying.",
+    "rating": 5,
+    "product": "68a9182f6f1c126a63d58ff2",
+    "user": "68a90bfaaa56ddb6bb36b7a8"
+  },
+  {
+    "review": "Rider argued about the delivery fee.",
+    "rating": 1,
+    "rider": "68a91087157b51fc2e36ceb4",
+    "user": "68a90bfaaa56ddb6bb36b7aa"
+  },
+  {
+    "review": "Restaurant’s efo riro had fresh vegetables.",
+    "rating": 5,
+    "restaurant": "68a90fc24481078610857f5a",
+    "user": "68a90bfaaa56ddb6bb36b7ac"
+  },
+  {
+    "review": "The sausage roll was dry.",
+    "rating": 2,
+    "product": "68a9182f6f1c126a63d58ff3",
+    "user": "68a90bfaaa56ddb6bb36b7ae"
+  },
+  {
+    "review": "Rider called me politely before arriving.",
+    "rating": 4,
+    "rider": "68a91087157b51fc2e36ceb5",
+    "user": "68a90bfaaa56ddb6bb36b7b0"
+  },
+  {
+    "review": "Restaurant’s ogbono soup was too watery.",
+    "rating": 2,
+    "restaurant": "68a90fc24481078610857f5b",
+    "user": "68a90bfaaa56ddb6bb36b7b2"
+  }
+]

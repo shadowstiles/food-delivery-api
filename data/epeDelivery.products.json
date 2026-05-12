@@ -1,0 +1,507 @@
+[{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58fef"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f53"
+  },
+  "name": "Jollof Rice with Chicken",
+  "description": "Classic Nigerian jollof rice served with grilled chicken and fried plantain.",
+  "price": 2500,
+  "priceDiscount": 200,
+  "imageCover": "https://example.com/images/jollof-rice-chicken.jpg",
+  "images": [
+    "https://example.com/images/jollof1.jpg",
+    "https://example.com/images/jollof2.jpg"
+  ],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Main Course",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.466Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.466Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ff2"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f56"
+  },
+  "name": "Shawarma",
+  "description": "Spicy chicken shawarma with extra cheese.",
+  "price": 1800,
+  "priceDiscount": 0,
+  "imageCover": "https://example.com/images/shawarma2.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Snacks",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ff3"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f57"
+  },
+  "name": "Pizza (Pepperoni)",
+  "description": "Thin crust pepperoni pizza topped with mozzarella cheese.",
+  "price": 5000,
+  "priceDiscount": 500,
+  "imageCover": "https://example.com/images/pizza-pepperoni.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Main Course",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ff4"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f57"
+  },
+  "name": "Pizza (Margherita)",
+  "description": "Freshly baked margherita pizza with basil and cheese.",
+  "price": 4500,
+  "priceDiscount": 0,
+  "imageCover": "https://example.com/images/pizza-margherita.jpg",
+  "images": [
+    "https://example.com/images/pizza-marg1.jpg"
+  ],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Main Course",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ff5"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f58"
+  },
+  "name": "Fried Rice with Turkey",
+  "description": "Delicious fried rice with roasted turkey wing and salad.",
+  "price": 3000,
+  "priceDiscount": 0,
+  "imageCover": "https://example.com/images/fried-rice-turkey.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Main Course",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ff6"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f58"
+  },
+  "name": "Fried Rice with Turkey",
+  "description": "Spicy fried rice with grilled turkey lap and veggies.",
+  "price": 3200,
+  "priceDiscount": 200,
+  "imageCover": "https://example.com/images/fried-rice-turkey2.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Main Course",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ff0"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f53"
+  },
+  "name": "Jollof Rice with Chicken",
+  "description": "Smoky party-style jollof rice with spicy grilled chicken leg.",
+  "price": 2700,
+  "priceDiscount": 0,
+  "imageCover": "https://example.com/images/jollof-rice-party.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Main Course",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ff8"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f59"
+  },
+  "name": "Burger & Fries",
+  "description": "Chicken burger with crispy fries and coleslaw.",
+  "price": 2500,
+  "priceDiscount": 200,
+  "imageCover": "https://example.com/images/burger-chicken.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Snacks",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ff1"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f56"
+  },
+  "name": "Shawarma",
+  "description": "Beef or chicken shawarma wrapped in pita bread with veggies and sauce.",
+  "price": 1500,
+  "priceDiscount": 100,
+  "imageCover": "https://example.com/images/shawarma.jpg",
+  "images": [
+    "https://example.com/images/shawarma1.jpg"
+  ],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Snacks",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ffa"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f5a"
+  },
+  "name": "Amala & Ewedu",
+  "description": "Yoruba delicacy of amala with ewedu and gbegiri soup.",
+  "price": 2800,
+  "priceDiscount": 0,
+  "imageCover": "https://example.com/images/amala-ewedu.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Local Dish",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ffb"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f54"
+  },
+  "name": "Efo Riro with Rice",
+  "description": "Steamed white rice served with spinach stew and assorted beef.",
+  "price": 3000,
+  "priceDiscount": 0,
+  "imageCover": "https://example.com/images/efo-riro.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Local Dish",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ffc"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f54"
+  },
+  "name": "Beans & Plantain",
+  "description": "Honey beans porridge with fried plantain.",
+  "price": 2000,
+  "priceDiscount": 100,
+  "imageCover": "https://example.com/images/beans-plantain.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Local Dish",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ffd"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f5c"
+  },
+  "name": "Grilled Catfish",
+  "description": "Spicy grilled catfish served with pepper sauce and chips.",
+  "price": 4000,
+  "priceDiscount": 300,
+  "imageCover": "https://example.com/images/grilled-catfish.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Main Course",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ffe"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f5c"
+  },
+  "name": "Chapman",
+  "description": "Popular Nigerian mocktail with fruity flavor.",
+  "price": 1200,
+  "priceDiscount": 0,
+  "imageCover": "https://example.com/images/chapman.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Drinks",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58fff"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f55"
+  },
+  "name": "Coke (50cl)",
+  "description": "Chilled Coca-Cola soft drink bottle 50cl.",
+  "price": 500,
+  "priceDiscount": 0,
+  "imageCover": "https://example.com/images/coke.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Drinks",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d59000"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f55"
+  },
+  "name": "Fanta (50cl)",
+  "description": "Chilled Fanta orange soft drink bottle 50cl.",
+  "price": 500,
+  "priceDiscount": 0,
+  "imageCover": "https://example.com/images/fanta.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Drinks",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d59001"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f5b"
+  },
+  "name": "Smoothie (Mango)",
+  "description": "Freshly blended mango smoothie with ice.",
+  "price": 1800,
+  "priceDiscount": 200,
+  "imageCover": "https://example.com/images/mango-smoothie.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Drinks",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d59002"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f5b"
+  },
+  "name": "Vanilla Ice Cream",
+  "description": "Creamy vanilla flavored ice cream cup.",
+  "price": 1000,
+  "priceDiscount": 0,
+  "imageCover": "https://example.com/images/ice-cream.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Dessert",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.468Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ff7"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f59"
+  },
+  "name": "Burger & Fries",
+  "description": "Juicy beef burger with fries and ketchup.",
+  "price": 2200,
+  "priceDiscount": 0,
+  "imageCover": "https://example.com/images/burger-fries.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Snacks",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a9182f6f1c126a63d58ff9"
+  },
+  "restaurant": {
+    "$oid": "68a90fc24481078610857f5a"
+  },
+  "name": "Pounded Yam & Egusi Soup",
+  "description": "Traditional pounded yam served with rich egusi soup and assorted meat.",
+  "price": 3500,
+  "priceDiscount": 0,
+  "imageCover": "https://example.com/images/pounded-yam-egusi.jpg",
+  "images": [],
+  "ratingsQuantity": 0,
+  "ratingsAverage": 4.5,
+  "category": "Local Dish",
+  "isAvailable": true,
+  "createdAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T01:23:59.467Z"
+  },
+  "__v": 0
+}]

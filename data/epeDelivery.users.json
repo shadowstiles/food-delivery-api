@@ -1,0 +1,888 @@
+[
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b78c"
+    },
+    "firstName": "TestAdmin1",
+    "lastName": "Demo",
+    "phoneNumber": "0810000001",
+    "email": "admin1@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Epe Central Mosque, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/1.jpg",
+    "role": "admin",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.9833, 6.5833],
+      "address": "Epe Central Mosque, Epe, Lagos",
+      "description": "Near central market"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.9833, 6.5833],
+        "address": "Epe Central Mosque, Epe, Lagos",
+        "description": "Near central market",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b78d"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.291Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.291Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b792"
+    },
+    "firstName": "TestVendor2",
+    "lastName": "Demo",
+    "phoneNumber": "0810000004",
+    "email": "vendor2@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Epe Marina, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/4.jpg",
+    "role": "vendor",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.98, 6.58],
+      "address": "Epe Marina, Epe, Lagos",
+      "description": "By the waterfront"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.98, 6.58],
+        "address": "Epe Marina, Epe, Lagos",
+        "description": "By the waterfront",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b793"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b794"
+    },
+    "firstName": "TestVendor3",
+    "lastName": "Demo",
+    "phoneNumber": "0810000005",
+    "email": "vendor3@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Oluwo Market, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/5.jpg",
+    "role": "vendor",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.979, 6.581],
+      "address": "Oluwo Market, Epe, Lagos",
+      "description": "Local market"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.979, 6.581],
+        "address": "Oluwo Market, Epe, Lagos",
+        "description": "Local market",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b795"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b796"
+    },
+    "firstName": "TestRider1",
+    "lastName": "Demo",
+    "phoneNumber": "0810000006",
+    "email": "rider1@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Epe Central Mosque, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/6.jpg",
+    "role": "rider",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.9833, 6.5833],
+      "address": "Epe Central Mosque, Epe, Lagos",
+      "description": "Near central market"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.9833, 6.5833],
+        "address": "Epe Central Mosque, Epe, Lagos",
+        "description": "Near central market",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b797"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b798"
+    },
+    "firstName": "TestRider2",
+    "lastName": "Demo",
+    "phoneNumber": "0810000007",
+    "email": "rider2@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Epe General Hospital, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/7.jpg",
+    "role": "rider",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.9839, 6.584],
+      "address": "Epe General Hospital, Epe, Lagos",
+      "description": "Hospital vicinity"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.9839, 6.584],
+        "address": "Epe General Hospital, Epe, Lagos",
+        "description": "Hospital vicinity",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b799"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b79a"
+    },
+    "firstName": "TestRider3",
+    "lastName": "Demo",
+    "phoneNumber": "0810000008",
+    "email": "rider3@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Lagos State University Epe Campus",
+    "profileImage": "https://randomuser.me/api/portraits/lego/8.jpg",
+    "role": "rider",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.985, 6.585],
+      "address": "Lagos State University Epe Campus",
+      "description": "Campus area"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.985, 6.585],
+        "address": "Lagos State University Epe Campus",
+        "description": "Campus area",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b79b"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b78e"
+    },
+    "firstName": "TestAdmin2",
+    "lastName": "Demo",
+    "phoneNumber": "0810000002",
+    "email": "admin2@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Epe General Hospital, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/2.jpg",
+    "role": "admin",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.9839, 6.584],
+      "address": "Epe General Hospital, Epe, Lagos",
+      "description": "Hospital vicinity"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.9839, 6.584],
+        "address": "Epe General Hospital, Epe, Lagos",
+        "description": "Hospital vicinity",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b78f"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b790"
+    },
+    "firstName": "TestVendor1",
+    "lastName": "Demo",
+    "phoneNumber": "0810000003",
+    "email": "vendor1@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Lagos State University Epe Campus",
+    "profileImage": "https://randomuser.me/api/portraits/lego/3.jpg",
+    "role": "vendor",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.985, 6.585],
+      "address": "Lagos State University Epe Campus",
+      "description": "Campus area"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.985, 6.585],
+        "address": "Lagos State University Epe Campus",
+        "description": "Campus area",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b791"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b7a0"
+    },
+    "firstName": "TestUser1",
+    "lastName": "Demo",
+    "phoneNumber": "0810000011",
+    "email": "user1@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "authorizationPin": "$2b$12$h6j3ZdbniTYVsWGk9U9ymeOEzdzMvOLmG3YSRZ5NXcZMIYSJAL5aS",
+    "authorizationPinConfirm": "$2b$12$h6j3ZdbniTYVsWGk9U9ymeOEzdzMvOLmG3YSRZ5NXcZMIYSJAL5aS",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Epe Central Mosque, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/1.jpg",
+    "role": "user",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.9833, 6.5833],
+      "address": "Epe Central Mosque, Epe, Lagos",
+      "description": "Near central market"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.9833, 6.5833],
+        "address": "Epe Central Mosque, Epe, Lagos",
+        "description": "Near central market",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b7a1"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b7a2"
+    },
+    "firstName": "TestUser2",
+    "lastName": "Demo",
+    "phoneNumber": "0810000012",
+    "email": "user2@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "authorizationPin": "$2b$12$h6j3ZdbniTYVsWGk9U9ymeOEzdzMvOLmG3YSRZ5NXcZMIYSJAL5aS",
+    "authorizationPinConfirm": "$2b$12$h6j3ZdbniTYVsWGk9U9ymeOEzdzMvOLmG3YSRZ5NXcZMIYSJAL5aS",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Epe General Hospital, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/2.jpg",
+    "role": "user",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.9839, 6.584],
+      "address": "Epe General Hospital, Epe, Lagos",
+      "description": "Hospital vicinity"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.9839, 6.584],
+        "address": "Epe General Hospital, Epe, Lagos",
+        "description": "Hospital vicinity",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b7a3"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b7a4"
+    },
+    "firstName": "TestUser3",
+    "lastName": "Demo",
+    "phoneNumber": "0810000013",
+    "email": "user3@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "authorizationPin": "$2b$12$h6j3ZdbniTYVsWGk9U9ymeOEzdzMvOLmG3YSRZ5NXcZMIYSJAL5aS",
+    "authorizationPinConfirm": "$2b$12$h6j3ZdbniTYVsWGk9U9ymeOEzdzMvOLmG3YSRZ5NXcZMIYSJAL5aS",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Lagos State University Epe Campus",
+    "profileImage": "https://randomuser.me/api/portraits/lego/3.jpg",
+    "role": "user",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.985, 6.585],
+      "address": "Lagos State University Epe Campus",
+      "description": "Campus area"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.985, 6.585],
+        "address": "Lagos State University Epe Campus",
+        "description": "Campus area",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b7a5"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b7a6"
+    },
+    "firstName": "TestUser4",
+    "lastName": "Demo",
+    "phoneNumber": "0810000014",
+    "email": "user4@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Epe Marina, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/4.jpg",
+    "role": "user",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.98, 6.58],
+      "address": "Epe Marina, Epe, Lagos",
+      "description": "By the waterfront"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.98, 6.58],
+        "address": "Epe Marina, Epe, Lagos",
+        "description": "By the waterfront",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b7a7"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b7a8"
+    },
+    "firstName": "TestUser5",
+    "lastName": "Demo",
+    "phoneNumber": "0810000015",
+    "email": "user5@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Oluwo Market, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/5.jpg",
+    "role": "user",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.979, 6.581],
+      "address": "Oluwo Market, Epe, Lagos",
+      "description": "Local market"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.979, 6.581],
+        "address": "Oluwo Market, Epe, Lagos",
+        "description": "Local market",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b7a9"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b7aa"
+    },
+    "firstName": "TestUser6",
+    "lastName": "Demo",
+    "phoneNumber": "0810000016",
+    "email": "user6@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Epe Central Mosque, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/6.jpg",
+    "role": "user",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.9833, 6.5833],
+      "address": "Epe Central Mosque, Epe, Lagos",
+      "description": "Near central market"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.9833, 6.5833],
+        "address": "Epe Central Mosque, Epe, Lagos",
+        "description": "Near central market",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b7ab"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b7ac"
+    },
+    "firstName": "TestUser7",
+    "lastName": "Demo",
+    "phoneNumber": "0810000017",
+    "email": "user7@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Epe General Hospital, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/7.jpg",
+    "role": "user",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.9839, 6.584],
+      "address": "Epe General Hospital, Epe, Lagos",
+      "description": "Hospital vicinity"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.9839, 6.584],
+        "address": "Epe General Hospital, Epe, Lagos",
+        "description": "Hospital vicinity",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b7ad"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b7ae"
+    },
+    "firstName": "TestUser8",
+    "lastName": "Demo",
+    "phoneNumber": "0810000018",
+    "email": "user8@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Lagos State University Epe Campus",
+    "profileImage": "https://randomuser.me/api/portraits/lego/8.jpg",
+    "role": "user",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.985, 6.585],
+      "address": "Lagos State University Epe Campus",
+      "description": "Campus area"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.985, 6.585],
+        "address": "Lagos State University Epe Campus",
+        "description": "Campus area",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b7af"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b7b0"
+    },
+    "firstName": "TestUser9",
+    "lastName": "Demo",
+    "phoneNumber": "0810000019",
+    "email": "user9@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Epe Marina, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/9.jpg",
+    "role": "user",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.98, 6.58],
+      "address": "Epe Marina, Epe, Lagos",
+      "description": "By the waterfront"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.98, 6.58],
+        "address": "Epe Marina, Epe, Lagos",
+        "description": "By the waterfront",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b7b1"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.293Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.293Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b7b2"
+    },
+    "firstName": "TestUser10",
+    "lastName": "Demo",
+    "phoneNumber": "0810000020",
+    "email": "user10@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Oluwo Market, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/0.jpg",
+    "role": "user",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.979, 6.581],
+      "address": "Oluwo Market, Epe, Lagos",
+      "description": "Local market"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.979, 6.581],
+        "address": "Oluwo Market, Epe, Lagos",
+        "description": "Local market",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b7b3"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.293Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.293Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b79e"
+    },
+    "firstName": "TestRider5",
+    "lastName": "Demo",
+    "phoneNumber": "0810000010",
+    "email": "rider5@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Oluwo Market, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/0.jpg",
+    "role": "rider",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.979, 6.581],
+      "address": "Oluwo Market, Epe, Lagos",
+      "description": "Local market"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.979, 6.581],
+        "address": "Oluwo Market, Epe, Lagos",
+        "description": "Local market",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b79f"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "68a90bfaaa56ddb6bb36b79c"
+    },
+    "firstName": "TestRider4",
+    "lastName": "Demo",
+    "phoneNumber": "0810000009",
+    "email": "rider4@foodapp.com",
+    "passcode": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "passcodeConfirm": "$2b$12$PvQ2s4GvYkyKsE3BwQf0xOeB6CU9Kmlui7/dI3FQbx05wdG9y306e",
+    "dob": {
+      "$date": "1995-05-14T23:00:00.000Z"
+    },
+    "address": "Epe Marina, Epe, Lagos",
+    "profileImage": "https://randomuser.me/api/portraits/lego/9.jpg",
+    "role": "rider",
+    "isPhoneNumberVerified": true,
+    "isEmailVerified": true,
+    "active": true,
+    "defaultLocation": {
+      "type": "Point",
+      "coordinates": [3.98, 6.58],
+      "address": "Epe Marina, Epe, Lagos",
+      "description": "By the waterfront"
+    },
+    "locations": [
+      {
+        "type": "Point",
+        "coordinates": [3.98, 6.58],
+        "address": "Epe Marina, Epe, Lagos",
+        "description": "By the waterfront",
+        "_id": {
+          "$oid": "68a90bfaaa56ddb6bb36b79d"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-23T00:31:54.292Z"
+    },
+    "__v": 0
+  }
+]

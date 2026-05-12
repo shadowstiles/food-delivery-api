@@ -1,0 +1,380 @@
+[{
+  "_id": {
+    "$oid": "68a90fc24481078610857f53"
+  },
+  "name": "Taste of Epe",
+  "owner": {
+    "$oid": "68a90bfaaa56ddb6bb36b792"
+  },
+  "description": "Local and continental dishes with a homely touch.",
+  "ratingsAverage": 0,
+  "ratingsQuantity": 0,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      3.9833,
+      6.5833
+    ],
+    "address": "1 Marina Road, Epe, Lagos",
+    "description": "Opposite Epe General Hospital"
+  },
+  "commissionRate": 10,
+  "phone": "08012345671",
+  "email": "tasteofepe@example.com",
+  "logo": "https://example.com/logos/tasteofepe.png",
+  "coverImage": "https://example.com/covers/tasteofepe.jpg",
+  "openingHours": {
+    "open": "08:00",
+    "close": "22:00"
+  },
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-08-23T00:48:02.173Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T00:48:02.173Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a90fc24481078610857f56"
+  },
+  "name": "Mama Epe Kitchen",
+  "owner": {
+    "$oid": "68a90bfaaa56ddb6bb36b794"
+  },
+  "description": "Traditional Nigerian meals with rich flavors.",
+  "ratingsAverage": 0,
+  "ratingsQuantity": 0,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      3.9815,
+      6.586
+    ],
+    "address": "22 Ita-Opo Street, Epe, Lagos",
+    "description": "Near Ita-Opo Market"
+  },
+  "commissionRate": 10,
+  "phone": "08012345674",
+  "email": "mamaepe@example.com",
+  "logo": "https://example.com/logos/mamaepe.png",
+  "coverImage": "https://example.com/covers/mamaepe.jpg",
+  "openingHours": {
+    "open": "07:00",
+    "close": "21:00"
+  },
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-08-23T00:48:02.173Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T00:48:02.173Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a90fc24481078610857f57"
+  },
+  "name": "Grill Masters Epe",
+  "owner": {
+    "$oid": "68a90bfaaa56ddb6bb36b794"
+  },
+  "description": "Premium grilled meat and fish with local spices.",
+  "ratingsAverage": 0,
+  "ratingsQuantity": 0,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      3.987,
+      6.5845
+    ],
+    "address": "8 Popo-Oba Street, Epe, Lagos",
+    "description": "Opposite Jubilee High School"
+  },
+  "commissionRate": 10,
+  "phone": "08012345675",
+  "email": "grillmasters@example.com",
+  "logo": "https://example.com/logos/grillmasters.png",
+  "coverImage": "https://example.com/covers/grillmasters.jpg",
+  "openingHours": {
+    "open": "12:00",
+    "close": "02:00"
+  },
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-08-23T00:48:02.173Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T00:48:02.173Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a90fc24481078610857f58"
+  },
+  "name": "Epe Vegan Delight",
+  "owner": {
+    "$oid": "68a90bfaaa56ddb6bb36b794"
+  },
+  "description": "Healthy plant-based meals and fresh juices.",
+  "ratingsAverage": 0,
+  "ratingsQuantity": 0,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      3.9882,
+      6.5828
+    ],
+    "address": "14 Olisa Street, Epe, Lagos",
+    "description": "Beside Epe Post Office"
+  },
+  "commissionRate": 10,
+  "phone": "08012345676",
+  "email": "vegan@example.com",
+  "logo": "https://example.com/logos/epevegan.png",
+  "coverImage": "https://example.com/covers/epevegan.jpg",
+  "openingHours": {
+    "open": "09:00",
+    "close": "20:00"
+  },
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-08-23T00:48:02.173Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T00:48:02.173Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a90fc24481078610857f59"
+  },
+  "name": "Sweet Tooth Bakery",
+  "owner": {
+    "$oid": "68a90bfaaa56ddb6bb36b790"
+  },
+  "description": "Cakes, pastries, and sweet snacks fresh daily.",
+  "ratingsAverage": 0,
+  "ratingsQuantity": 0,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      3.99,
+      6.583
+    ],
+    "address": "18 Alade Market Road, Epe, Lagos",
+    "description": "Inside Alade Market"
+  },
+  "commissionRate": 10,
+  "phone": "08012345677",
+  "email": "sweettooth@example.com",
+  "logo": "https://example.com/logos/sweettooth.png",
+  "coverImage": "https://example.com/covers/sweettooth.jpg",
+  "openingHours": {
+    "open": "07:00",
+    "close": "20:00"
+  },
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-08-23T00:48:02.174Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T00:48:02.174Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a90fc24481078610857f5a"
+  },
+  "name": "Palmwine Lounge",
+  "owner": {
+    "$oid": "68a90bfaaa56ddb6bb36b790"
+  },
+  "description": "Palmwine, grills, and local entertainment.",
+  "ratingsAverage": 0,
+  "ratingsQuantity": 0,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      3.9915,
+      6.5815
+    ],
+    "address": "25 Itamerin Street, Epe, Lagos",
+    "description": "Behind Epe Stadium"
+  },
+  "commissionRate": 10,
+  "phone": "08012345678",
+  "email": "palmwine@example.com",
+  "logo": "https://example.com/logos/palmwine.png",
+  "coverImage": "https://example.com/covers/palmwine.jpg",
+  "openingHours": {
+    "open": "16:00",
+    "close": "01:00"
+  },
+  "status": "inactive",
+  "createdAt": {
+    "$date": "2025-08-23T00:48:02.174Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T00:48:02.174Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a90fc24481078610857f54"
+  },
+  "name": "Lagoon Bites",
+  "owner": {
+    "$oid": "68a90bfaaa56ddb6bb36b792"
+  },
+  "description": "Fresh seafood and grilled specials near the lagoon.",
+  "ratingsAverage": 0,
+  "ratingsQuantity": 0,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      3.9855,
+      6.5822
+    ],
+    "address": "5 Lagoon Front, Epe, Lagos",
+    "description": "Beside Lagoon Park"
+  },
+  "commissionRate": 10,
+  "phone": "08012345672",
+  "email": "lagoonbites@example.com",
+  "logo": "https://example.com/logos/lagoonbites.png",
+  "coverImage": "https://example.com/covers/lagoonbites.jpg",
+  "openingHours": {
+    "open": "10:00",
+    "close": "23:00"
+  },
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-08-23T00:48:02.173Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T00:48:02.173Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a90fc24481078610857f5c"
+  },
+  "name": "Chef's Corner",
+  "owner": {
+    "$oid": "68a90bfaaa56ddb6bb36b790"
+  },
+  "description": "Variety of Nigerian and intercontinental dishes.",
+  "ratingsAverage": 0,
+  "ratingsQuantity": 0,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      3.984,
+      6.5865
+    ],
+    "address": "35 Oke-Oyinbo Street, Epe, Lagos",
+    "description": "Near Oke-Oyinbo Market"
+  },
+  "commissionRate": 10,
+  "phone": "08012345680",
+  "email": "chefscorner@example.com",
+  "logo": "https://example.com/logos/chefscorner.png",
+  "coverImage": "https://example.com/covers/chefscorner.jpg",
+  "openingHours": {
+    "open": "09:00",
+    "close": "23:00"
+  },
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-08-23T00:48:02.174Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T00:48:02.174Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a90fc24481078610857f55"
+  },
+  "name": "Epe Shawarma Spot",
+  "owner": {
+    "$oid": "68a90bfaaa56ddb6bb36b792"
+  },
+  "description": "Best shawarma and grills in town.",
+  "ratingsAverage": 0,
+  "ratingsQuantity": 0,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      3.982,
+      6.585
+    ],
+    "address": "12 Ayetoro Road, Epe, Lagos",
+    "description": "Close to Epe Central Mosque"
+  },
+  "commissionRate": 10,
+  "phone": "08012345673",
+  "email": "epeshawarma@example.com",
+  "logo": "https://example.com/logos/epeshawarma.png",
+  "coverImage": "https://example.com/covers/epeshawarma.jpg",
+  "openingHours": {
+    "open": "11:00",
+    "close": "23:59"
+  },
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-08-23T00:48:02.173Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T00:48:02.173Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68a90fc24481078610857f5b"
+  },
+  "name": "Epe Fast Foods",
+  "owner": {
+    "$oid": "68a90bfaaa56ddb6bb36b790"
+  },
+  "description": "Quick bites, burgers, and fries for on-the-go.",
+  "ratingsAverage": 0,
+  "ratingsQuantity": 0,
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      3.989,
+      6.5855
+    ],
+    "address": "30 Ijebu-Ode Road, Epe, Lagos",
+    "description": "Opposite Epe Bus Terminal"
+  },
+  "commissionRate": 10,
+  "phone": "08012345679",
+  "email": "epefastfoods@example.com",
+  "logo": "https://example.com/logos/epefastfoods.png",
+  "coverImage": "https://example.com/covers/epefastfoods.jpg",
+  "openingHours": {
+    "open": "08:00",
+    "close": "22:00"
+  },
+  "status": "active",
+  "createdAt": {
+    "$date": "2025-08-23T00:48:02.174Z"
+  },
+  "updatedAt": {
+    "$date": "2025-08-23T00:48:02.174Z"
+  },
+  "__v": 0
+}]

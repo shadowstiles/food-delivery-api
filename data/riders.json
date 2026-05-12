@@ -1,0 +1,72 @@
+[
+  {
+    "user": "68a90bfaaa56ddb6bb36b796",
+    "vehicleType": "bike",
+    "plateNumber": "KJA-342-AB",
+    "location": {
+      "type": "Point",
+      "coordinates": [3.3792, 6.5244],
+      "description": "Operating around Ikeja, Lagos",
+      "address": "Ikeja, Lagos, Nigeria"
+    },
+    "availabilityStatus": "available",
+    "employmentStatus": "approved",
+    "isVerified": true
+  },
+  {
+    "user": "68a90bfaaa56ddb6bb36b79c",
+    "vehicleType": "car",
+    "plateNumber": "ABJ-221-FC",
+    "location": {
+      "type": "Point",
+      "coordinates": [7.4951, 9.0579],
+      "description": "Based in Garki area",
+      "address": "Garki, Abuja, Nigeria"
+    },
+    "availabilityStatus": "offline",
+    "employmentStatus": "pending",
+    "isVerified": false
+  },
+  {
+    "user": "68a90bfaaa56ddb6bb36b79e",
+    "vehicleType": "bike",
+    "plateNumber": "ENU-889-KT",
+    "location": {
+      "type": "Point",
+      "coordinates": [7.49508, 6.4483],
+      "description": "Covers Enugu main city",
+      "address": "Enugu, Nigeria"
+    },
+    "availabilityStatus": "onDelivery",
+    "employmentStatus": "approved",
+    "isVerified": true
+  },
+  {
+    "user": "68a90bfaaa56ddb6bb36b79a",
+    "vehicleType": "bike",
+    "plateNumber": "KAN-556-YZ",
+    "location": {
+      "type": "Point",
+      "coordinates": [8.5167, 12.0022],
+      "description": "Operating within Kano metropolis",
+      "address": "Kano, Nigeria"
+    },
+    "availabilityStatus": "available",
+    "employmentStatus": "suspended",
+    "isVerified": false
+  },
+  {
+    "user": "68a90bfaaa56ddb6bb36b798",
+    "vehicleType": "car",
+    "plateNumber": "PHC-742-LM",
+    "location": {
+      "type": "Point",
+      "coordinates": [7.0134, 4.8242],
+      "description": "Mostly at Port Harcourt city center",
+      "address": "Port Harcourt, Rivers, Nigeria"
+    },
+    "availabilityStatus": "offline",
+    "employmentStatus": "approved",
+    "isVerified": true
+  }
+]
