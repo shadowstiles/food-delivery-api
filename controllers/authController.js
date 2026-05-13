@@ -307,11 +307,11 @@ export const createVendor = catchAsync(async (req, res, next) => {
   await newAuthUser.save({ validateBeforeSave: false });
   const token = newAuthUser.createOtp("email");
 
-  await newVendor.save();
+  const vendor = await newVendor.save();
 
   res.status(201).json({
     status: "success",
-    message: "Vendor Successfully Created",
+    data: { data: vendor },
   });
 
   try {
