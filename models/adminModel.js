@@ -23,6 +23,8 @@ const adminSchema = new mongoose.Schema(
       type: String,
       enum: ["superadmin", "manager", "support"],
       default: "support",
+      lowercase: true,
+      trim: true,
     },
 
     dob: Date,
@@ -50,6 +52,11 @@ const adminSchema = new mongoose.Schema(
       type: Date,
     },
 
+    isDeleted: {
+      type: Boolean,
+      default: false,
+    },
+
     activityLogs: [
       {
         action: String,
@@ -67,9 +74,65 @@ const adminSchema = new mongoose.Schema(
 );
 
 adminSchema.pre(/^find/, function (next) {
+  this.where({ isDeleted: false });
+
   this.populate({
     path: "authId",
   });
+
+  next();
+});
+
+adminSchema.pre(/^find/, function (next) {
+  this.where({ isDeleted: false });
+  next();
+});
+
+adminSchema.pre("save", async function (next) {
+  if (this.roleLevel !== "superadmin") {
+    return next();
+  }
+
+  const Admin = mongoose.model("Admin");
+
+  const superAdminCount = await Admin.countDocuments({
+    roleLevel: "superadmin",
+    _id: { $ne: this._id },
+  });
+
+  if (superAdminCount >= 2) {
+    return next(new Error("Maximum number of superadmins reached"));
+  }
+
+  next();
+});
+
+adminSchema.pre("findOneAndUpdate", async function (next) {
+  const update = this.getUpdate();
+
+  if (!update.roleLevel || update.roleLevel !== "superadmin") {
+    return next();
+  }
+
+  const Admin = mongoose.model("Admin");
+
+  const docToUpdate = await this.model.findOne(this.getQuery());
+
+  if (!docToUpdate) {
+    return next();
+  }
+
+  if (docToUpdate.roleLevel === "superadmin") {
+    return next();
+  }
+
+  const superAdminCount = await Admin.countDocuments({
+    roleLevel: "superadmin",
+  });
+
+  if (superAdminCount >= 2) {
+    return next(new Error("Maximum number of superadmins reached"));
+  }
 
   next();
 });

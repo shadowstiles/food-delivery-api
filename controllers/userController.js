@@ -88,6 +88,19 @@ export const getUser = catchAsync(async (req, res, next) => {
   });
 });
 
+export const getCustomer = catchAsync(async (req, res, next) => {
+  const user = await User.findOne({ authId: req.user?.id });
+
+  if (!user) {
+    return next(new AppError(`No User found with that ID`, 404));
+  }
+
+  res.status(200).json({
+    status: "success",
+    data: { data: user },
+  });
+});
+
 export const updateUser = catchAsync(async (req, res, next) => {
   const user = await User.findOneAndUpdate(
     { authId: req.params.id },

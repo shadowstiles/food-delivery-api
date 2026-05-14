@@ -44,6 +44,7 @@ router.use(authController.protect);
 router.route("/updatePasscode").patch(authController.updatePasscode);
 
 router.route("/me").get(userController.getMe, userController.getUser);
+router.route("/customer").get(userController.getMe, userController.getCustomer);
 router
   .route("/updateMe")
   .patch(upload.single("profileImage"), userController.updateMe);

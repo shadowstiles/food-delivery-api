@@ -1,6 +1,7 @@
 import crypto from "crypto";
 
 import bcrypt from "bcryptjs";
+import { parsePhoneNumberFromString } from "libphonenumber-js";
 import mongoose from "mongoose";
 import validator from "validator";
 
@@ -10,7 +11,8 @@ const authSchema = new mongoose.Schema(
       type: String,
       unique: true,
       lowercase: true,
-      sparse: true, // allows null/undefined without breaking uniqueness
+      sparse: true,
+      trim: true,
       validate: [validator.isEmail, "Please provide a valid email"],
     },
 
@@ -18,35 +20,41 @@ const authSchema = new mongoose.Schema(
       type: String,
       required: true,
       unique: true,
-      validate: {
-        validator: (val) => {
-          // Remove spaces for safety
-          const cleaned = val.replace(/\s/g, "");
-          return validator.isMobilePhone(cleaned, "en-NG");
-        },
-        message: "Please provide a valid phone number",
+
+      set: (value) => {
+        const phone = parsePhoneNumberFromString(value, "NG");
+
+        if (!phone || !phone.isValid()) {
+          throw new Error("Invalid Nigerian phone number");
+        }
+
+        return phone.number;
       },
     },
 
-    // 🔑 Authentication
     passcode: {
       type: String,
-      required: [true, "Please provide a passcode"],
       minlength: 6,
       maxlength: 6,
       select: false,
+
+      required: function () {
+        return this.role !== "admin";
+      },
     },
 
     role: {
       type: String,
       enum: ["customer", "rider", "vendor", "admin"],
       default: "customer",
-      immutable: function () {
-        return this.role === "admin";
-      },
+      immutable: true,
     },
 
-    // 🔐 OTPs grouped under subdocument
+    mustUpdatePasscode: {
+      type: Boolean,
+      default: false,
+    },
+
     otp: {
       passcode: {
         code: { type: String, select: false },
@@ -64,7 +72,10 @@ const authSchema = new mongoose.Schema(
       },
     },
 
-    passcodeChangedAt: { type: Date, select: false },
+    passcodeChangedAt: {
+      type: Date,
+      select: false,
+    },
 
     isVerified: {
       type: Boolean,
@@ -79,32 +90,45 @@ const authSchema = new mongoose.Schema(
 );
 
 //
-// 📌 Indexes
+// INDEXES
 //
 authSchema.index({ role: 1 });
 authSchema.index({ isVerified: 1 });
 
 //
-// 🔐 Passcode
+// HASH PASSCODE
 //
 authSchema.pre("save", async function (next) {
-  // Encrypt passcode if modified
-  if (this.isModified("passcode")) {
-    this.passcode = await bcrypt.hash(this.passcode, 12);
-    this.passcodeChangedAt = Date.now() - 1000;
+  if (!this.isModified("passcode") || !this.passcode) {
+    return next();
+  }
+
+  this.passcode = await bcrypt.hash(this.passcode, 12);
+
+  this.passcodeChangedAt = Date.now() - 1000;
+
+  next();
+});
+
+//
+// PREVENT ROLE ESCALATION
+//
+authSchema.pre("save", function (next) {
+  if (!this.isNew && this.isModified("role")) {
+    return next(new Error("Role modification is not allowed"));
   }
 
   next();
 });
 
 //
-// 🛠 Instance Methods
+// PASSCODE METHODS
 //
 authSchema.methods.correctPasscode = async function (
   candidatePasscode,
   userPasscode
 ) {
-  return await bcrypt.compare(candidatePasscode, userPasscode);
+  return bcrypt.compare(candidatePasscode, userPasscode);
 };
 
 authSchema.methods.changedPasscodeAfter = function (JWTTimestamp) {
@@ -113,24 +137,34 @@ authSchema.methods.changedPasscodeAfter = function (JWTTimestamp) {
       this.passcodeChangedAt.getTime() / 1000,
       10
     );
+
     return JWTTimestamp < changedTimestamp;
   }
+
   return false;
 };
 
 //
-// 🔐 OTP Methods
+// OTP HELPERS
 //
 function generateOtp() {
   const rawOtp = crypto.randomInt(100000, 1000000).toString();
+
   const hashedOtp = crypto.createHash("sha256").update(rawOtp).digest("hex");
-  return { rawOtp, hashedOtp, expires: Date.now() + 10 * 60 * 1000 };
+
+  return {
+    rawOtp,
+    hashedOtp,
+    expires: Date.now() + 10 * 60 * 1000,
+  };
 }
 
 authSchema.methods.createOtp = function (type) {
   const { rawOtp, hashedOtp, expires } = generateOtp();
+
   this.otp[type].code = hashedOtp;
   this.otp[type].expires = expires;
+
   return rawOtp;
 };
 
