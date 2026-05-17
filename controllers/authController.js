@@ -20,6 +20,8 @@ import {
 import { riderPendingApprovalTemplate } from "../utils/email/templates/rider.js";
 import { vendorSignupTemplate } from "../utils/email/templates/vendor.js";
 
+const MAX_OTP_ATTEMPTS = 5;
+
 // ====== Token Helper ======
 export const signAccessToken = (id) =>
   jwt.sign({ id: id }, process.env.JWT_ACCESS_SECRET, {
@@ -275,26 +277,34 @@ export const createVendor = catchAsync(async (req, res, next) => {
     businessName,
   } = req.body;
 
-  let newAuthUser;
   let newVendor;
+  let authUser;
 
   if (!authId) {
-    newAuthUser = new Auth({
+    authUser = new Auth({
       phoneNumber,
       email,
       role: "vendor",
     });
 
+    await authUser.save({ validateBeforeSave: false });
+
     newVendor = new Vendor({
-      authId: authId,
-      firstName: firstName,
-      lastName: lastName,
+      authId: authUser._id,
+      firstName,
+      lastName,
       contactNumber: phoneNumber,
-      address: address,
-      businessName: businessName,
+      address,
+      businessName,
     });
   } else {
     newVendor = await Vendor.findOne({ authId });
+
+    if (!newVendor) {
+      return next(new AppError("Vendor not found", 404));
+    }
+
+    authUser = await Auth.findById(authId);
 
     newVendor.firstName = firstName;
     newVendor.lastName = lastName;
@@ -303,9 +313,9 @@ export const createVendor = catchAsync(async (req, res, next) => {
     newVendor.contactNumber = phoneNumber;
   }
 
-  // 2)Generate the random reset token
-  await newAuthUser.save({ validateBeforeSave: false });
-  const token = newAuthUser.createOtp("email");
+  const token = authUser.createOtp("email");
+
+  await authUser.save({ validateBeforeSave: false });
 
   const vendor = await newVendor.save();
 
@@ -319,12 +329,12 @@ export const createVendor = catchAsync(async (req, res, next) => {
       code: token.toString(),
     });
 
-    await sendEmail({ to: newAuthUser.email, subject, html, text });
+    await sendEmail({ to: authUser.email, subject, html, text });
   } catch (error) {
-    newAuthUser.otp.email.code = undefined;
-    newAuthUser.otp.email.expires = undefined;
+    authUser.otp.email.code = undefined;
+    authUser.otp.email.expires = undefined;
 
-    await newAuthUser.save({ validateBeforeSave: false });
+    await authUser.save({ validateBeforeSave: false });
 
     // console.debug("There was an error sending the email. Try again later");
   }
@@ -335,7 +345,7 @@ export const createVendor = catchAsync(async (req, res, next) => {
       vendorName: firstName,
     });
 
-    await sendEmail({ to: newAuthUser.email, subject, html, text });
+    await sendEmail({ to: authUser.email, subject, html, text });
   } catch (error) {
     // console.debug("There was an error sending the email. Try again later");
   }
@@ -644,6 +654,8 @@ export const generateEmailVerificationOTP = catchAsync(
     } catch (error) {
       authUser.otp.email.code = undefined;
       authUser.otp.email.expires = undefined;
+      authUser.otp.email.lastSentAt = undefined;
+      authUser.otp.email.attempts = 0;
 
       await authUser.save({ validateBeforeSave: false });
 
@@ -672,12 +684,22 @@ export const verifyEmailVericationOTP = catchAsync(async (req, res, next) => {
 
   // 2) If token has not expired, and there is user, set the new passcode
   if (!authUser) {
+    authUser.otp.email.attempts += 1;
     return next(new AppError("OTP is invalid or has expired", 400));
   }
 
+  // TOO MANY ATTEMPTS
+  if (authUser?.otp.email.attempts >= MAX_OTP_ATTEMPTS) {
+    return next(new AppError("Too many invalid attempts", 429));
+  }
+
   authUser.isVerified = true;
+
+  // CLEAR OTP AFTER SUCCESS
   authUser.otp.email.code = undefined;
   authUser.otp.email.expires = undefined;
+  authUser.otp.email.lastSentAt = undefined;
+  authUser.otp.email.attempts = 0;
 
   if (authUser.role === "customer") {
     const user = await User.findOne({ authId: authUser._id }).setOptions({
@@ -719,8 +741,11 @@ export const forgotPasscode = catchAsync(async (req, res, next) => {
 
     await sendEmail({ to: authUser.email, subject, html, text });
   } catch (error) {
-    authUser.otp.passcode.code = undefined;
-    authUser.otp.passcode.expires = undefined;
+    authUser.otp.email.code = undefined;
+    authUser.otp.email.expires = undefined;
+    authUser.otp.email.lastSentAt = undefined;
+    authUser.otp.email.attempts = 0;
+
     await authUser.save({ validateBeforeSave: false });
 
     // console.debug("There was an error sending the email. Try again later");
@@ -747,7 +772,13 @@ export const resetPasscode = catchAsync(async (req, res, next) => {
 
   // 2) If token has not expired, and there is user, set the new passcode
   if (!authUser) {
+    authUser.otp.passcode.attempts += 1;
     return next(new AppError("OTP is invalid or has expired", 400));
+  }
+
+  // TOO MANY ATTEMPTS
+  if (authUser?.otp.passcode.attempts >= MAX_OTP_ATTEMPTS) {
+    return next(new AppError("Too many invalid attempts", 429));
   }
 
   const isValidated = req.body.passcodeConfirm === req.body.passcode;
@@ -756,8 +787,11 @@ export const resetPasscode = catchAsync(async (req, res, next) => {
   }
 
   authUser.passcode = req.body?.passcode;
+
   authUser.otp.passcode.code = undefined;
   authUser.otp.passcode.expires = undefined;
+  authUser.otp.passcode.lastSentAt = undefined;
+  authUser.otp.passcode.attempts = 0;
 
   await authUser.save({ validateBeforeSave: false });
 

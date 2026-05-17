@@ -52,9 +52,8 @@ async function sendDevEthereal({ to, subject, html, text }) {
     html,
     text,
   });
-  process.stdout.write(
-    `Ethereal preview URL: ${nodemailer.getTestMessageUrl(info)}\n`
-  );
+  // Preview URL in console
+  console.log("Ethereal preview URL:", nodemailer.getTestMessageUrl(info));
   return info;
 }
 
@@ -67,11 +66,13 @@ export default async function sendEmail({ to, subject, html, text }) {
     try {
       if (isProd) {
         try {
-          // try SMPT first
-          await sendViaSMTP({ to, subject, html, text });
-        } catch (sgErr) {
-          // fallback to SenGrid if configured
+          // try SendGrid first
           await sendViaSendGrid({ to, subject, html, text });
+        } catch (sgErr) {
+          // fallback to SMTP if configured
+          if (process.env.SMTP_HOST) {
+            await sendViaSMTP({ to, subject, html, text });
+          } else throw sgErr;
         }
       } else {
         // dev: ethereal

@@ -14,6 +14,8 @@ class APIFeatures {
       "lng",
       "lat",
       "categories",
+      "purpose",
+      "restaurantIds",
     ];
 
     excludedField.forEach((el) => delete queryObj[el]);

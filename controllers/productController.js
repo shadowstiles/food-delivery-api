@@ -35,10 +35,30 @@ export const getAllProducts = catchAsync(async (req, res, next) => {
     filter = { restaurant: req.params.restaurantId };
   }
 
-  if (req.query.categories) {
-    const categoryIds = req.query.categories?.split(",") || [];
+  if (req.query.restaurantIds) {
+    const restaurantIds = req.query.restaurantIds
+      .split(",")
+      .map((id) => id.trim())
+      .filter(Boolean);
 
-    filter = { category: { $in: categoryIds } };
+    filter = {
+      restaurant: {
+        $in: restaurantIds,
+      },
+    };
+  }
+
+  if (req.query.categories) {
+    const categoryIds = req.query.categoryIds
+      .split(",")
+      .map((id) => id.trim())
+      .filter(Boolean);
+
+    filter = {
+      category: {
+        $in: categoryIds,
+      },
+    };
   }
 
   const features = new APIFeatures(

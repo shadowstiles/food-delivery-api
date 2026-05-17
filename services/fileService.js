@@ -6,13 +6,13 @@ export async function saveFileMetadata(data) {
 }
 
 export async function getFiles(ownerId, purpose, req) {
-  const query = { ownerId: ownerId };
-  if (purpose) query.purpose = purpose;
+  const query = { ownerId };
 
-  const files = new APIFeatures(
-    File.find(query).sort({ createdAt: -1 }),
-    req.queryParams || req.query
-  )
+  if (purpose) {
+    query.purpose = purpose;
+  }
+
+  const files = new APIFeatures(File.find(query), req.query)
     .filter()
     .sort()
     .limitFields()

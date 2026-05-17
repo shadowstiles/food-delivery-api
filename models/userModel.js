@@ -61,4 +61,12 @@ userSchema.pre(/^find/, function (next) {
   next();
 });
 
+userSchema.post("save", async (doc, next) => {
+  if (!doc.populated("authId")) {
+    await doc.populate("authId");
+  }
+
+  next();
+});
+
 export default mongoose.model("User", userSchema);

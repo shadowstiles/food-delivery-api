@@ -137,6 +137,14 @@ adminSchema.pre("findOneAndUpdate", async function (next) {
   next();
 });
 
+adminSchema.post("save", async (doc, next) => {
+  if (!doc.populated("authId")) {
+    await doc.populate("authId");
+  }
+
+  next();
+});
+
 // Index for quick queries
 adminSchema.index({ roleLevel: 1 });
 adminSchema.index({ isActive: 1 });

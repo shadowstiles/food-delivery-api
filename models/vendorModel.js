@@ -96,6 +96,14 @@ vendorSchema.pre(/^find/, function (next) {
   next();
 });
 
+vendorSchema.post("save", async (doc, next) => {
+  if (!doc.populated("authId")) {
+    await doc.populate("authId");
+  }
+
+  next();
+});
+
 // Indexing for faster search
 vendorSchema.index({ businessName: 1 });
 vendorSchema.index({ status: 1, isVerified: 1 });

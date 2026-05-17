@@ -14,6 +14,9 @@ function filterVendorUpdate(body) {
     "contactNumber",
     "address",
     "bankDetails",
+    "avatarUrl",
+    "dob",
+    "gender;",
   ];
 
   return Object.fromEntries(
@@ -67,10 +70,12 @@ export const deleteVendor = catchAsync(async (req, res, next) => {
 export const getVendor = catchAsync(async (req, res, next) => {
   const query =
     req.user.role === "admin"
-      ? { _id: req.params.id }
-      : { _id: req.params.id, authId: req.user.id };
+      ? [{ _id: req.params.id }]
+      : [{ _id: req.params.id }, { authId: req.params.id }];
 
-  const vendor = await Vendor.findOne(query);
+  const vendor = await Vendor.findOne({
+    $or: query,
+  });
 
   if (!vendor) {
     return next(new AppError(`No Vendor found with that ID`, 404));

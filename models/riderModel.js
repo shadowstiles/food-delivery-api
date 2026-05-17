@@ -357,4 +357,12 @@ riderSchema.pre(/^find/, function (next) {
   next();
 });
 
+riderSchema.post("save", async (doc, next) => {
+  if (!doc.populated("authId")) {
+    await doc.populate("authId");
+  }
+
+  next();
+});
+
 export default mongoose.model("Rider", riderSchema);

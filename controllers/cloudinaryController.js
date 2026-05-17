@@ -1,11 +1,13 @@
 import { Readable } from "stream";
 
 import cloudinary from "../config/cloudinaryConfig.js";
+import Admin from "../models/adminModel.js";
 import Category from "../models/categoryModel.js";
 import Product from "../models/productModel.js";
 import Restaurant from "../models/restaurantModel.js";
 import Rider from "../models/riderModel.js";
 import User from "../models/userModel.js";
+import Vendor from "../models/vendorModel.js";
 import {
   saveFileMetadata,
   deleteFileMetadata,
@@ -64,9 +66,31 @@ export const upload = catchAsync(async (req, res, next) => {
       });
 
       if (purpose.toLowerCase() === "passport") {
-        const user = await User.findByIdAndUpdate(entityId, {
-          avatarUrl: saved.url,
-        });
+        let user;
+
+        if (req.user.role.toLowerCase() === "customer") {
+          user = await User.findByIdAndUpdate(entityId, {
+            avatarUrl: saved.url,
+          });
+        }
+
+        if (req.user.role.toLowerCase() === "vendor") {
+          user = await Vendor.findByIdAndUpdate(entityId, {
+            avatarUrl: saved.url,
+          });
+        }
+
+        if (req.user.role.toLowerCase() === "admin") {
+          user = await Admin.findByIdAndUpdate(entityId, {
+            avatarUrl: saved.url,
+          });
+        }
+
+        if (req.user.role.toLowerCase() === "rider") {
+          user = await Rider.findByIdAndUpdate(entityId, {
+            avatarUrl: saved.url,
+          });
+        }
 
         if (!user) {
           return next(new AppError("User not found", 404));
@@ -194,6 +218,7 @@ export const uploadAdminVendor = catchAsync(async (req, res, next) => {
 
       const saved = await saveFileMetadata({
         ownerType: req.user.role,
+        ownerId: req.user._id,
         purpose,
         storage: "cloudinary",
         publicId: result.public_id,

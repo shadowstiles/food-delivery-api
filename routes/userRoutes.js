@@ -36,6 +36,7 @@ router
   .patch(authController.verifyEmailVericationOTP);
 
 router.route("/verify-user-role").post(userController.verifyUser);
+router.route("/create-vendor").post(authController.createVendor);
 router.route("/update-passcode").patch(userController.updatePasscode);
 
 // Protect all routes after this middleware
@@ -67,7 +68,6 @@ router
     authController.restrictAdminToLevels("superadmin"),
     authController.createAdmin
   );
-router.route("/create-vendor").post(authController.createVendor);
 router
   .route("/update-admin/:id")
   .patch(

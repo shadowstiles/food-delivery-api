@@ -1,15 +1,16 @@
 import mongoose from "mongoose";
 
-import AppError from "../utils/appError.js";
-
 const fileSchema = new mongoose.Schema(
   {
-    ownerId: mongoose.Schema.Types.ObjectId,
+    ownerId: {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      refPath: "ownerType",
+    },
 
     ownerType: {
       type: String,
       enum: ["customer", "rider", "vendor", "admin"],
-      required: true,
     },
 
     purpose: {
@@ -57,7 +58,7 @@ const fileSchema = new mongoose.Schema(
       min: 0,
     },
 
-    metadata: Object,
+    metadata: mongoose.Schema.Types.Mixed,
     folder: String,
     originalName: String,
 
@@ -74,38 +75,13 @@ const fileSchema = new mongoose.Schema(
   }
 );
 
-// ──────────────────────────────
-// Pre-save Uniqueness Enforcement
-// ──────────────────────────────
-fileSchema.pre("save", async function (next) {
-  const file = this;
+fileSchema.pre("validate", function (next) {
+  if (this.storage === "s3" && !this.fileKey) {
+    return next(new Error("fileKey required"));
+  }
 
-  const multiAllowedPurposes = [
-    "category",
-    "nin",
-    "banner",
-    "license",
-    "insurance",
-    "vehicle",
-    "logo",
-    "rider",
-  ];
-
-  if (!multiAllowedPurposes.includes(file.purpose)) {
-    const existing = await mongoose.model("File").findOne({
-      ownerId: file.ownerId,
-      purpose: file.purpose,
-      isDeleted: false,
-      _id: { $ne: file._id },
-    });
-
-    if (existing) {
-      return next(
-        new AppError(
-          `File with purpose "${file.purpose}" already exists for this owner`
-        )
-      );
-    }
+  if (this.storage === "cloudinary" && !this.publicId) {
+    return next(new Error("publicId required"));
   }
 
   next();
@@ -123,6 +99,7 @@ fileSchema.index(
         $nin: [
           "category",
           "nin",
+          "banner",
           "license",
           "insurance",
           "vehicle",
@@ -134,5 +111,14 @@ fileSchema.index(
     },
   }
 );
+
+fileSchema.index({ ownerId: 1 });
+
+fileSchema.index({
+  ownerType: 1,
+  purpose: 1,
+});
+
+fileSchema.index({ createdAt: -1 });
 
 export default mongoose.model("File", fileSchema);

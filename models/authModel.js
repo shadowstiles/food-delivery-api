@@ -5,6 +5,12 @@ import { parsePhoneNumberFromString } from "libphonenumber-js";
 import mongoose from "mongoose";
 import validator from "validator";
 
+import AppError from "../utils/appError.js";
+
+const OTP_COOLDOWN_SECONDS = 60;
+
+
+
 const authSchema = new mongoose.Schema(
   {
     email: {
@@ -59,16 +65,31 @@ const authSchema = new mongoose.Schema(
       passcode: {
         code: { type: String, select: false },
         expires: { type: Date, select: false },
+        lastSentAt: Date,
+        attempts: {
+          type: Number,
+          default: 0,
+        },
       },
 
       email: {
         code: { type: String, select: false },
         expires: { type: Date, select: false },
+        lastSentAt: Date,
+        attempts: {
+          type: Number,
+          default: 0,
+        },
       },
 
       phone: {
         code: { type: String, select: false },
         expires: { type: Date, select: false },
+        lastSentAt: Date,
+        attempts: {
+          type: Number,
+          default: 0,
+        },
       },
     },
 
@@ -160,10 +181,23 @@ function generateOtp() {
 }
 
 authSchema.methods.createOtp = function (type) {
+  if (
+    this.otp[type].lastSentAt &&
+    Date.now() - this.otp[type].lastSentAt.getTime() <
+      OTP_COOLDOWN_SECONDS * 1000
+  ) {
+    throw new AppError(
+      `Please wait ${OTP_COOLDOWN_SECONDS} seconds before requesting another OTP.`,
+      429
+    );
+  }
+
   const { rawOtp, hashedOtp, expires } = generateOtp();
 
   this.otp[type].code = hashedOtp;
   this.otp[type].expires = expires;
+  this.otp[type].lastSentAt = new Date();
+  this.otp[type].attempts = 0;
 
   return rawOtp;
 };

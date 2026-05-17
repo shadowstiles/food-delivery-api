@@ -22,6 +22,8 @@ router
     productController.createProduct
   );
 
+router.route("/:restaurantIds").get(productController.getAllProducts);
+
 router
   .route("/:id")
   .get(productController.getProduct)

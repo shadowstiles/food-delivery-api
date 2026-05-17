@@ -19,13 +19,13 @@ const restaurantSchema = new mongoose.Schema(
     description: {
       type: String,
       trim: true,
-      maxlength: [500, "Description must be less than 500 characters"],
+      maxlength: [2000, "Description must be less than 2000 characters"],
     },
 
     ratingsAverage: {
       type: Number,
       default: 0,
-      min: [1, "Rating must be above 1.0"],
+      min: [0, "Rating must be above 1.0"],
       max: [5, "Rating must be below 5.0"],
       set: (val) => Math.round(val * 100) / 100, // rounds e.g. 4.666 → 4.7
     },
@@ -179,10 +179,6 @@ restaurantSchema.pre("save", function (next) {
 });
 
 // 🔹 Indexes
-restaurantSchema.index(
-  { name: 1 },
-  { unique: true, collation: { locale: "en", strength: 2 } }
-);
 restaurantSchema.index({ ratingsAverage: -1 });
 restaurantSchema.index({ location: "2dsphere" });
 
