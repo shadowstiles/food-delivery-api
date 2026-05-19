@@ -1,6 +1,14 @@
+import { setServers } from "node:dns/promises";
+
 import mongoose from "mongoose";
 
 import env from "./env.js";
+
+// Source - https://stackoverflow.com/a/79892633
+// Posted by Xoosk
+// Retrieved 2026-05-18, License - CC BY-SA 4.0
+
+setServers(["1.1.1.1", "8.8.8.8"]);
 
 const DB = env.mongoURI.replace("<PASSWORD>", process.env.MONGO_DB_PASSWORD);
 
